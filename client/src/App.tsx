@@ -2,6 +2,7 @@ import './App.css';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import CreateUser from './Components/CreateUser';
 import ListOfUsers from './Components/ListOfUsers';
+import UpdatePassword from './Components/UpdatePassword';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <ApolloProvider client={client}>
       <CreateUser/>
       <ListOfUsers/>
+      <UpdatePassword/>
     </ApolloProvider>
   );
 }
